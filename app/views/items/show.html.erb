@@ -1,0 +1,6 @@
+show.html.erb
+<% if @item.item_imgs.attached? %>
+  <% @item.item_imgs.each do |image| %>
+    <%= image_tag image %> <br>
+  <% end %>
+<% end %>
